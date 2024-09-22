@@ -1,0 +1,88 @@
+/* Estilos generales del contenedor */
+.login-container {
+    max-width: 600px;
+    margin: 100px auto; /* Centrar en la pantalla con un margen superior */
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    text-align: center; /* Centrar todos los elementos */
+  }
+  
+  /* Encabezado */
+  .login-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Mensaje de error */
+  .login-error {
+    color: red;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilos de formulario */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Recordar sesión */
+  .login-remember {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Botón de iniciar sesión */
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #8a8a8a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #2d3bff8a;
+    color:rgb(0, 0, 0);
+  }
+  
+  /* Texto para registro */
+  .login-register-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Botón de registro */
+  .login-register-btn {
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .login-register-btn:hover {
+    color: #0056b3;
+  }
+  

@@ -1,18 +1,54 @@
-.App {
-  text-align: center;
+/* Centrar y ajustar el carrusel */
+.carousel-inner img {
+  height: 525px; /* Ajusta el tamaño del carrusel a un tamaño más pequeño */
+  object-fit: cover; /* Mantener el aspecto, recortando el exceso */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 1200px; /* Limitar el ancho máximo para que esté centrado en pantallas grandes */
+  margin: 0 auto; /* Centramos el contenido */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .carousel-inner img {
+    height: 200px; /* Reducir el tamaño del carrusel en pantallas pequeñas */
+  }
+  .col-md-3, .col-md-9 {
+    width: 100%; /* Las categorías y el carrusel ocuparán el 100% del ancho */
   }
 }
 
+/* Estilo general de la aplicación */
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilo de animación para el logo de la App */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilo general de los enlaces */
+.App-link {
+  color: #61dafb;
+}
+
+/* Estilo para la cabecera de la aplicación */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,15 +60,92 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card-product {
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Pequeño borde para dar más definición */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.15); /* Sombra más ligera y difusa */
+}
+
+
+/* Estilo para la descripción cuando se expande la card */
+.card-description {
+  display: none;
+  padding-top: 10px;
+}
+
+.card-product.expanded .card-description {
+  display: block;
+}
+.navbar.navbar-transparent {
+  background-color: rgba(0, 0, 0, 0.849) !important; /* El !important fuerza el estilo */
+}
+.modal-header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-right: 50px; /* Añadimos espacio a la derecha para el botón de cerrar */
+}
+
+.modal-header .btn-close {
+  position: absolute;
+  right: 15px; /* El botón permanece en la esquina derecha */
+  top: 10px; /* Ajuste vertical del botón */
+}
+
+.modal-title.product-title {
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.custom-toast {
+  background-color: #000000bd !important;  /* Fondo verde */
+  color: white !important;  /* Texto blanco */
+}
+
+.custom-toast-progress {
+  background-color: #ffffffb0 !important;  /* Progreso dorado */
+}
+.footer {
+  background-color: #f1f1f1;
+  padding: 40px 0;
+  color: #333;
+  width: 100%;
+}
+
+.footer h5 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+main {
+  flex: 1; /* Hace que el contenido ocupe el espacio disponible */
 }

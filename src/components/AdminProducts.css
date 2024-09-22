@@ -1,0 +1,126 @@
+/* Contenedor principal */
+.admin-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Encabezado */
+  .admin-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Subtítulo */
+  .admin-subheader {
+    font-size: 20px;
+    margin-top: 30px;
+    color: #555;
+  }
+  
+  /* Formulario de productos */
+  .admin-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Añade un pequeño espacio entre los elementos */
+  }
+  
+  
+  .admin-input {
+    width: 100%;
+    max-width: 500px; /* Limita el ancho máximo para evitar que los campos sean demasiado grandes */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  
+  /* Botones */
+  .admin-btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #8f8f8f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-btn:hover {
+    background-color: #218838;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .edit-btn {
+    background-color: #007bff;
+  }
+  
+  .edit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Lista de productos */
+  .admin-product-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .admin-product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centra todos los elementos verticalmente */
+    padding: 15px 10px;
+    border-bottom: 1px solid #ddd;
+    gap: 20px;
+  }
+  
+  
+  .admin-product-info {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; /* Centra los elementos verticalmente dentro de este contenedor */
+    gap: 15px;
+  }
+  
+  .admin-product-name {
+    font-size: 18px;
+    font-weight: bold;
+    flex: 1; /* El nombre ocupa todo el espacio disponible */
+    margin-right: 10px; /* Añade un margen a la derecha para separar del resto */
+    white-space: normal; /* Permite que el texto haga un salto de línea si es necesario */
+    word-wrap: break-word; /* Asegura que palabras largas se dividan correctamente */
+  }
+  
+  
+  .admin-product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  
+  .admin-btn-container {
+    display: flex;
+    gap: 10px; /* Controla la separación entre botones */
+    align-items: center; /* Centra verticalmente los botones */
+  }
+  
